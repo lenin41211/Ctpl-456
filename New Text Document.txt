@@ -1,0 +1,99 @@
+// emcc -s NO_EXIT_RUNTIME=1 -s EXPORTED_FUNCTIONS="['_valid','_add','_view']" -s EXTRA_EXPORTED_RUNTIME_METHODS=["ccall"] abc.c -o abc.js
+
+<html>
+<meta charset="utf-8">
+<head>
+<title>Student Management System</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container" align="center">
+    <h1>Student Management System</h1>
+    
+   <form>
+    <label for="rno"><b>Rollno&emsp;</b></label><input type="text" name="rno" id="rno" placeholder="example : 1405205"/>
+    <input type="button" onclick="search()" value="submit"><br>
+    </form>
+    </div>
+
+<script language= "javascript" type="text/javascript" src="stu.js">
+ 
+
+</script>
+function search()
+{
+ alert(document.getElementById('rno').value);
+}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */if(res[0][0]!=0)
+    {  
+     var myTable =
+      '<fieldset>' +
+        
+        '<table>' +
+            '<tr>' +
+                '<td class="small">Rollno</td>' +
+                '<td class="large">Name</td>' +
+                '<td class="small">Total</td>' +
+                '<td class="small">Grade</td>' +
+            '</tr>' +
+             '<tr>' +
+                '<td class="small">'+res[1][0]+'</td>' +
+                '<td class="large">'+res[2][0]+'</td>' +
+                '<td class="small">'+res[3][0]+'</td>' +
+                '<td class="small">'+res[4][0]+'</td>' +
+            '</tr>' +
+        '</table>' +
+    '</fieldset>'
+  }
+  else
+   {
+     alert("No Such a Student ");
+   }*/
